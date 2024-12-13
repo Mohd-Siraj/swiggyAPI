@@ -1,4 +1,4 @@
-.App {
+ .App {
   text-align: center;
 }
 
@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0rem 1rem;
+border: 1px solid black;
+}
+.header > img{
+  width: 5rem;
+  height: 5rem;
+}
+.header li{
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+}
+.searchBar{
+  border-radius: 3rem;
+  padding: .4rem;
+  width: 12rem;
+  background: #ececec;
+  border: transparent;
+}
+.headerLeft{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.headerRight{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+}
+.headerRight > ul > Link{
+  text-decoration: none;
+}
+
+
+
+.card {
+  position: relative; 
+  border: 1px solid black;
+  width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  z-index: 1; 
+}
+
+.cardText{
+   display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.card > img{
+  width: 100%;
+  height: 16rem !important;
+  object-fit: fill;
+  border-radius: 1rem;
+}
+
+
+
+.returnCard{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+ 
+
+
+
+.card{
+  text-decoration: none;
+ 
+}
+.card:hover{
+  cursor: pointer;
+    -ms-transform: scale(0.95);
+  -webkit-transform: scale(.95); 
+  transform: scale(.95);
+}
+.name{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+.linkHeader a{
+  text-decoration: none;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.searchContainer{
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+} 
